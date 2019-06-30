@@ -1,0 +1,55 @@
+<div style="margin:50px;">
+<div *ngIf="data.length == 0"> There's no data yet, try uploading a file.</div>
+<div *ngIf="data.length > 1">
+
+<div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Observation Date</th>
+            <th>Retail Sales Volume</th>
+            <th>Retail Price</th>
+            <th>ACV Distribution</th>
+            <th>Competition</th>
+            <th>EDLP</th>
+            <th>Trade Any Promo</th>
+            <th>Tv</th>
+            <th>Print Ad</th>
+            <th>Online Display</th>
+            <th>Preroll Video</th>
+            <th>Paid Search</th>
+            <th>Public Relations</th>
+            <th>FSI</th>
+            <th>Digital Coupon</th>
+            <th>Shopper Marketing</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of data;" (mouseover)="highlighted(row)"
+               [ngClass] = "{'highlight' : row.Observation_Date == selected}">
+               
+            <td>{{row.Observation_Date}}</td>
+            <td>{{row.Retail_Sales_Volume}}</td>
+            <td>{{row.Retail_Price}}</td>
+            <td>{{row.Acv_Distribution}}</td>
+            <td>{{row.Competition}}</td>
+            <td>{{row.Edlp}}</td>
+            <td>{{row.Trade_Any_Promo}}</td>
+            <td>{{row.Tv}}</td>
+            <td>{{row.Print_Ad}}</td>
+            <td>{{row.Online_Display}}</td>
+            <td>{{row.Preroll_Video}}</td>
+            <td>{{row.Paid_Search}}</td>
+            <td>{{row.Public_Relations}}</td>
+            <td>{{row.Fsi}}</td>
+            <td>{{row.Digital_Coupon}}</td>
+            <td>{{row.Shopper_Marketing}}</td>
+
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+
+ 

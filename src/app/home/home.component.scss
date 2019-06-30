@@ -1,0 +1,29 @@
+table {
+    border-collapse: separate;
+    border-spacing: 50px 0;
+
+}
+
+td {
+    padding: 10px 0;
+}
+class 
+.row-stripe.even {
+    background-color: #ffffff;
+}
+.row-stripe.odd {
+    background-color: #8b1d1d;
+}
+
+ table, th, td {
+    padding: 2px 3px;
+    text-align: center;
+}
+th {
+    font-weight: bold;
+} 
+
+table tr.highlight {
+    background-color: #5db7d3;
+    color: #ffffff;
+}
