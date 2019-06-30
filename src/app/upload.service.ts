@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UploadService {
 
-  DJANGO_SERVER: string = "http://127.0.0.1:8000";
+  DJANGO_SERVER: string = "https://keends-frontend.herokuapp.com/";
 
 
   constructor(private http: HttpClient) { }
